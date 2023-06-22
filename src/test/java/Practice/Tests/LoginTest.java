@@ -32,6 +32,8 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(profilePage.notificationContainsUsername(username));
         Assert.assertEquals(driver.getCurrentUrl(), excelReader.getStringData("URL", 2, 3));
 
+
+
     }
 
     @Test
@@ -44,6 +46,8 @@ public class LoginTest extends BaseTest {
             loginPage.insertUsername(invalidUsername);
             loginPage.insertPassword(password);
             loginPage.clickOnSubmit();
+
+
         }
 
 
@@ -58,6 +62,8 @@ public class LoginTest extends BaseTest {
         loginPage.insertPassword(invalidPassword);
         loginPage.clickOnSubmit();
 
+
+
     }
 
     @Test
@@ -67,6 +73,9 @@ public class LoginTest extends BaseTest {
         loginPage.insertUsername(invalidUsername);
         loginPage.insertPassword(invalidPassword);
         loginPage.clickOnSubmit();
+
+
+
 
     }
 
